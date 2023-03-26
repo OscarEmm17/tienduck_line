@@ -1,3 +1,13 @@
+<!DOCTYPE html>
+@if (Route::has('login'))
+    <div class="sm:fixed sm:top-0 sm:right-0 p-6 text-right">
+        @auth
+            <a href="{{ url('/tienduck') }}" class="font-semibold text-gray-600 hover:text-gray-900 focus:outline focus:outline-2 focus:rounded-sm focus:outline-red-500">Dashboard</a>
+        @else
+            <a href="{{ route('login') }}" class="font-semibold text-gray-600 hover:text-gray-900 focus:outline focus:outline-2 focus:rounded-sm focus:outline-red-500">Log in</a>
+        @endauth
+    </div>
+@endif
 <x-guest-layout>
     <x-authentication-card>
         <x-slot name="logo">
