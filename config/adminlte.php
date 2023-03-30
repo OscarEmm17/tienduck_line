@@ -298,90 +298,252 @@ return [
         ],
         [
             'type'         => 'fullscreen-widget',
-            'topnav_right' => true,
+            'topnav_right' => false,
         ],
 
         // Sidebar items:
-        [
+        /*[
             'type' => 'sidebar-menu-search',
             'text' => 'search',
-        ],
+        ],*/
+        ['header' => 'Ventas'],
         [
-            'text' => 'blog',
-            'url'  => 'admin/blog',
-            'can'  => 'manage-blog',
-        ],
-        [
-            'text'        => 'pages',
-            'url'         => 'admin/pages',
-            'icon'        => 'far fa-fw fa-file',
-            'label'       => 4,
-            'label_color' => 'success',
-        ],
-        ['header' => 'account_settings'],
-        [
-            'text' => 'profile',
-            'url'  => 'admin/settings',
-            'icon' => 'fas fa-fw fa-user',
-        ],
-        [
-            'text' => 'change_password',
-            'url'  => 'admin/settings',
-            'icon' => 'fas fa-fw fa-lock',
-        ],
-        [
-            'text'    => 'multilevel',
-            'icon'    => 'fas fa-fw fa-share',
+            'text'    => 'Ventas',
+            'icon'    => 'fas fa-cash-register',
             'submenu' => [
                 [
-                    'text' => 'level_one',
+                    'text' => 'Ventas',
                     'url'  => '#',
-                ],
-                [
-                    'text'    => 'level_one',
-                    'url'     => '#',
                     'submenu' => [
                         [
-                            'text' => 'level_two',
+                            'text' => 'Nueva',
                             'url'  => '#',
-                        ],
-                        [
-                            'text'    => 'level_two',
-                            'url'     => '#',
-                            'submenu' => [
-                                [
-                                    'text' => 'level_three',
-                                    'url'  => '#',
-                                ],
-                                [
-                                    'text' => 'level_three',
-                                    'url'  => '#',
-                                ],
-                            ],
                         ],
                     ],
                 ],
                 [
-                    'text' => 'level_one',
+                    'text' => 'Movimientos',
                     'url'  => '#',
+                    'submenu' => [
+                        [
+                            'text' => 'Devolucion',
+                            'url'  => '#',
+                        ],
+                        [
+                            'text' => 'Cambio',
+                            'url'  => '#',
+                        ],
+                    ],
                 ],
             ],
         ],
-        ['header' => 'labels'],
+
+        ['header' => 'Productos'],
         [
-            'text'       => 'important',
-            'icon_color' => 'red',
-            'url'        => '#',
+            'text'    => 'Productos',
+            'icon'    => 'fas fa-tshirt',
+            'submenu' => [
+                [
+                    'text' => 'Producto',
+                    'url'  => '#',
+                    'submenu' => [
+                        [
+                            'text' => 'Registrar',
+                            'url'  => '#',
+                        ],
+                        [
+                            'text' => 'Editar',
+                            'url'  => '#',
+                        ],
+                        [
+                            'text' => 'Eliminar',
+                            'url'  => '#',
+                        ],
+                    ],
+                ],
+                [
+                    'text' => 'Categoria',
+                    'url'  => '#',
+                    'submenu' => [
+                        [
+                            'text' => 'Registrar',
+                            'url'  => '#',
+                        ],
+                        [
+                            'text' => 'Editar',
+                            'url'  => '#',
+                        ],
+                        [
+                            'text' => 'Eliminar',
+                            'url'  => '#',
+                        ],
+                    ],
+                ],
+                [
+                    'text' => 'Sub categoria',
+                    'url'  => '#',
+                    'submenu' => [
+                        [
+                            'text' => 'Registrar',
+                            'url'  => '#',
+                        ],
+                        [
+                            'text' => 'Editar',
+                            'url'  => '#',
+                        ],
+                        [
+                            'text' => 'Eliminar',
+                            'url'  => '#',
+                        ],
+                    ],
+                ],
+            ],
         ],
+
+        ['header' => 'Almacen'],
         [
-            'text'       => 'warning',
-            'icon_color' => 'yellow',
-            'url'        => '#',
+            'text'    => 'Almacen',
+            'icon'  => 'fas fa-store-alt',
+            'submenu' => [
+                [
+                    'text' => 'Inventario',
+                    'url'  => '#',
+                    'submenu' => [
+                        [
+                            'text' => 'Registrar',
+                            'url'  => '#',
+                        ],
+                        [
+                            'text' => 'Editar',
+                            'url'  => '#',
+                        ],
+                        [
+                            'text' => 'Eliminar',
+                            'url'  => '#',
+                        ],
+                    ],
+                ],
+                [
+                    'text' => 'Proveedor',
+                    'url'  => '#',
+                    'submenu' => [
+                        [
+                            'text' => 'Registrar',
+                            'url'  => '#',
+                        ],
+                        [
+                            'text' => 'Editar',
+                            'url'  => '#',
+                        ],
+                        [
+                            'text' => 'Eliminar',
+                            'url'  => '#',
+                        ],
+                    ],
+                ],
+                [
+                    'text' => 'Almacen',
+                    'url'  => '#',
+                    'submenu' => [
+                        [
+                            'text' => 'Registrar',
+                            'url'  => '#',
+                        ],
+                        [
+                            'text' => 'Editar',
+                            'url'  => '#',
+                        ],
+                        [
+                            'text' => 'Eliminar',
+                            'url'  => '#',
+                        ],
+                    ],
+                ],
+            ],
         ],
+
+        ['header' => 'Line TDK'],
         [
-            'text'       => 'information',
-            'icon_color' => 'cyan',
-            'url'        => '#',
+            'text'    => 'Modulos',
+            'icon'  => 'fas fa-laptop-house',
+            'submenu' => [
+                [
+                    'text' => 'Inicio',
+                    'url'  => '#',
+                    'submenu' => [
+                        [
+                            'text' => 'Registrar',
+                            'url'  => '#',
+                        ],
+                        [
+                            'text' => 'Editar',
+                            'url'  => '#',
+                        ],
+                        [
+                            'text' => 'Eliminar',
+                            'url'  => '#',
+                        ],
+                    ],
+                ],
+                [
+                    'text' => 'Catalogo',
+                    'url'  => '#',
+                    'submenu' => [
+                        [
+                            'text' => 'Registrar',
+                            'url'  => '#',
+                        ],
+                        [
+                            'text' => 'Editar',
+                            'url'  => '#',
+                        ],
+                        [
+                            'text' => 'Eliminar',
+                            'url'  => '#',
+                        ],
+                    ],
+                ],
+                [
+                    'text' => 'Ofertas',
+                    'url'  => '#',
+                    'submenu' => [
+                        [
+                            'text' => 'Registrar',
+                            'url'  => '#',
+                        ],
+                        [
+                            'text' => 'Editar',
+                            'url'  => '#',
+                        ],
+                        [
+                            'text' => 'Eliminar',
+                            'url'  => '#',
+                        ],
+                    ],
+                ],
+            ],
+        ],
+        ['header' => 'Información'],
+        [
+            'text'    => 'Datos',
+            'icon'    => 'fas fa-fw fa-share',
+            'submenu' => [
+                [
+                    'text'       => 'Contacto',
+                    'icon_color' => 'red',
+                    'url'        => '#',
+                ],
+                [
+                    'text'       => 'warning',
+                    'icon_color' => 'yellow',
+                    'url'        => '#',
+                ],
+                [
+                    'text'       => 'information',
+                    'icon_color' => 'cyan',
+                    'url'        => '#',
+                ],
+            ],
         ],
     ],
 
