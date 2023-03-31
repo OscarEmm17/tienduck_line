@@ -529,18 +529,18 @@ return [
             'icon'    => 'fas fa-fw fa-share',
             'submenu' => [
                 [
-                    'text'       => 'Contacto',
+                    'text'       => 'Datos',
                     'icon_color' => 'red',
                     'url'        => '#',
                 ],
                 [
-                    'text'       => 'warning',
-                    'icon_color' => 'yellow',
+                    'text'       => 'Contacto',
+                    'icon_color' => 'cyan',
                     'url'        => '#',
                 ],
                 [
-                    'text'       => 'information',
-                    'icon_color' => 'cyan',
+                    'text'       => 'Información Tienduck',
+                    'icon_color' => 'yellow',
                     'url'        => '#',
                 ],
             ],
